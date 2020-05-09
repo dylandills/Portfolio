@@ -5,16 +5,16 @@
   <?php include 'includes/header.inc.html.php';?>
   <body>
     <main>
-      <section>
+      <section id="home">
 
       </section>
-      <section>
+      <section id="about">
 
       </section>
-      <section>
+      <section id="projects">
 
       </section>
-      <section>
+      <section id="contact">
 
       </section>
     </main>

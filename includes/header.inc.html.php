@@ -1,11 +1,12 @@
 <?php define('BASE_URL', '/cas285/portfolio/'); ?>
 <header>
-  <nav class="menu">
+  <a href="#home" class="logo" data-scroll>Fixed Nav</a>
+  <nav class="nav-collapse">
     <ul>
-      <li><a href="<?php echo BASE_URL; ?>index.php">Home</a></li>
-      <li><a href="<?php echo BASE_URL; ?>about">About</a></li>
-      <li><a href="<?php echo BASE_URL; ?>register">Projects</a></li>
-      <li><a href="<?php echo BASE_URL; ?>contact">Contact</a></li>
+      <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
+      <li class="menu-item"><a href="#about" data-scroll>About</a></li>
+      <li class="menu-item"><a href="#projects" data-scroll>Projects</a></li>
+      <li class="menu-item"><a href="#contact" data-scroll>Contact</a></li>
     </ul>
   </nav>
 </header>
