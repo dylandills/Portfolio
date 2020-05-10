@@ -52,9 +52,14 @@ body h6 {
 }
 body .header {
   background-color: #ffffff;
+  -webkit-box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
   position: fixed;
-  min-width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 3;
 }
 body .header ul {
@@ -90,7 +95,7 @@ body .header .menu-icon {
   user-select: none;
 }
 body .header .nav-icon {
-  background: #333;
+  background: #000000;
   display: block;
   height: 2px;
   position: relative;
@@ -117,7 +122,7 @@ body .header .menu-btn {
   display: none;
 }
 body .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 100%;
 }
 body .header .menu-btn:checked ~ .menu-icon .nav-icon {
   background: transparent;

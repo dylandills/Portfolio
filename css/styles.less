@@ -39,9 +39,14 @@ body {
   //Header
   .header {
     background-color: @color1;
+    -webkit-box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
     position: fixed;
-    min-width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 3;
     ul {
      margin: 0;
@@ -78,7 +83,7 @@ body {
       user-select: none;
     }
     .nav-icon {
-      background: #333;
+      background: @color2;
       display: block;
       height: 2px;
       position: relative;
@@ -104,7 +109,7 @@ body {
     .menu-btn {
       display: none;
       &:checked ~ .menu {
-        max-height: 240px;
+        max-height: 100%;
       }
       &:checked ~ .menu-icon .nav-icon {
         background: transparent;
