@@ -1,10 +1,60 @@
 body {
   font-family: 'Nunito Sans';
-}
-body ul {
-  list-style: none;
+  color: #000000;
 }
 body a {
-  color: #000000;
   text-decoration: none;
+  color: #000000;
+}
+body li {
+  list-style: none;
+}
+body h1 {
+  color: #000000;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+body h2 {
+  color: #000000;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
+body h3 {
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 0.55em;
+  text-align: center;
+}
+body h4 {
+  color: #000000;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 0.45em;
+  text-align: center;
+}
+body h5 {
+  color: #000000;
+  font-size: 0.85em;
+  font-weight: bold;
+  margin-bottom: 0.425em;
+  text-align: center;
+}
+body h6 {
+  color: #000000;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin-bottom: 0.375em;
+  text-align: center;
+}
+body .header {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }

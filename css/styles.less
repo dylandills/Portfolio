@@ -1,13 +1,48 @@
+//Imports
+@import 'mixins.less';
 @import 'palette.less';
 
 
 body {
   font-family: 'Nunito Sans';
-  ul {
+  color: @color2;
+  a {
+    text-decoration: none;
+    color: @color2;
+  }
+  li {
     list-style: none;
   }
-  a {
-    color: @color2;
-    text-decoration: none;
+  // Headings
+  h1 {
+    .headingStyle(@color2; 1.6em);
+  }
+
+  h2 {
+    .headingStyle(@color2; 1.4em);
+  }
+
+  h3 {
+    .headingStyle(@color2; 1.1em);
+  }
+
+  h4 {
+    .headingStyle(@color2;.9em);
+  }
+
+  h5 {
+    .headingStyle(@color2;.85em);
+  }
+
+  h6 {
+    .headingStyle(@color2;.75em);
+  }
+  //Header
+  .header {
+    background-color: @color1;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
   }
 }
