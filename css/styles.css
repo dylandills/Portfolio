@@ -3,7 +3,6 @@ body {
   color: #000000;
 }
 body a {
-  text-decoration: none;
   color: #000000;
 }
 body li {
@@ -53,8 +52,97 @@ body h6 {
 }
 body .header {
   background-color: #ffffff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
   position: fixed;
-  width: 100%;
+  min-width: 100%;
   z-index: 3;
+}
+body .header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: center;
+}
+body .header ul li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+body .header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+body .header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+body .header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+body .header .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+body .header .nav-icon:before,
+body .header .nav-icon:after {
+  background: #000000;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+body .header .nav-icon:before {
+  top: 5px;
+}
+body .header .nav-icon:after {
+  top: -5px;
+}
+body .header .menu-btn {
+  display: none;
+}
+body .header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+body .header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+body .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+body .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+@media (min-width: 48em) {
+  body .header li {
+    float: left;
+  }
+  body .header li a {
+    padding: 20px 30px;
+  }
+  body .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  body .header .menu-icon {
+    display: none;
+  }
 }

@@ -7,7 +7,6 @@ body {
   font-family: 'Nunito Sans';
   color: @color2;
   a {
-    text-decoration: none;
     color: @color2;
   }
   li {
@@ -40,9 +39,106 @@ body {
   //Header
   .header {
     background-color: @color1;
-    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
     position: fixed;
-    width: 100%;
+    min-width: 100%;
     z-index: 3;
+    ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     overflow: hidden;
+     background-color: @color1;
+     text-align: center;
+     li a {
+       display: block;
+       padding: 20px 20px;
+       text-decoration: none;
+     }
+    }
+    .logo {
+      display: block;
+      float: left;
+      font-size: 2em;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+  //Menu
+    .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+  //Menu icon
+    .menu-icon {
+      cursor: pointer;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+    }
+    .nav-icon {
+      background: #333;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+      &:before, &:after {
+        background: @color2;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+      &:before {
+        top: 5px;
+      }
+      &:after {
+        top: -5px;
+      }
+    }
+    //Menu Button
+    .menu-btn {
+      display: none;
+      &:checked ~ .menu {
+        max-height: 240px;
+      }
+      &:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+        &:before {
+          transform: rotate(-45deg);
+          top:0;
+        }
+        &:after {
+          transform: rotate(45deg);
+          top:0;
+        }
+      }
+    }
+  }
+}
+
+//Media Queries
+@media (min-width: 48em) {
+  body {
+    .header {
+      li {
+        float: left;
+        a {
+          padding: 20px 30px;
+        }
+      }
+      .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+      .menu-icon {
+        display: none;
+      }
+    }
   }
 }
