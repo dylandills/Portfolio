@@ -2,10 +2,18 @@
 @import 'mixins.less';
 @import 'palette.less';
 
+@font-face {
+    font-family: 'easycore';
+    src:  url('easycore-webfont.woff') format('woff'), /* Modern Browsers */
+          url('easycore-webfont.woff2') format('woff2'), /* Modern Browsers */
+          url('fonts/Easycore.ttf') format('truetype');
+}
+
 
 body {
-  font-family: 'Nunito Sans';
+  font-family: 'easycore', Georgia, Serif;
   color: @color2;
+  font-size: 20px;
   a {
     color: @color2;
   }
@@ -39,9 +47,9 @@ body {
   //Header
   .header {
     background-color: @color1;
-    -webkit-box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
-    box-shadow: 1px 0px 4px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 0px 10px 0 rgba(0, 0, 0, 0.5);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -78,7 +86,13 @@ body {
     .menu-icon {
       cursor: pointer;
       float: right;
-      padding: 28px 20px;
+      border: 5px solid @color2;
+      border-radius: 10px;
+      -webkit-box-shadow: 1px 0px 5px 0 rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 1px 0px 5px 0 rgba(0, 0, 0, 0.5);
+      box-shadow: 1px 0px 5px 0 rgba(0, 0, 0, 0.5);
+      padding: 25px 15px;
+      margin: 10px;
       position: relative;
       user-select: none;
     }
