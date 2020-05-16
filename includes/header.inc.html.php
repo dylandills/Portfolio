@@ -1,6 +1,6 @@
 <?php define('BASE_URL', '/cas285/portfolio/'); ?>
 <header class="header">
-  <a href="#home" class="logo">Logo</a>
+  <a href="#home" class="logo">Dylan Dills</a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn">
     <span class="nav-icon"></span>

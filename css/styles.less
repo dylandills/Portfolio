@@ -11,9 +11,7 @@
 
 
 body {
-  font-family: 'easycore', Georgia, Serif;
   color: @color2;
-  font-size: 20px;
   a {
     color: @color2;
   }
@@ -51,11 +49,12 @@ body {
     -moz-box-shadow: 1px 0px 10px 0 rgba(0, 0, 0, 0.5);
     box-shadow: 1px 0px 10px 0 rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 3;
+    font-family: 'easycore', Georgia, Serif;
     ul {
      margin: 0;
      padding: 0;
@@ -67,12 +66,14 @@ body {
        display: block;
        padding: 20px 20px;
        text-decoration: none;
+       font-size: 3.750em;
+       letter-spacing: 0.1em;
      }
     }
     .logo {
       display: block;
       float: left;
-      font-size: 2em;
+      font-size: 4em;
       padding: 10px 20px;
       text-decoration: none;
     }
@@ -99,10 +100,10 @@ body {
     .nav-icon {
       background: @color2;
       display: block;
-      height: 2px;
+      height: 3px;
       position: relative;
       transition: background .2s ease-out;
-      width: 18px;
+      width: 20px;
       &:before, &:after {
         background: @color2;
         content: '';
@@ -113,10 +114,10 @@ body {
         width: 100%;
       }
       &:before {
-        top: 5px;
+        top: 8px;
       }
       &:after {
-        top: -5px;
+        top: -8px;
       }
     }
     //Menu Button
@@ -136,6 +137,26 @@ body {
           top:0;
         }
       }
+    }
+  }
+
+  //Main
+  main {
+    // Sections
+    section {
+      &:first-child, &:nth-child(3) {
+        background-color: @main-color;
+        width: 100%;
+        height: 100vh; //to be changed later
+      }
+      &:nth-child(2), &:last-child {
+        background-color: @color1;
+        width: 100%;
+        height: 100vh; //to be changed later
+      }
+    }
+    .icon-container {
+      padding: 1em 1em;
     }
   }
 }

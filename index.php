@@ -6,7 +6,7 @@
   <body>
     <main>
       <section id="home">
-
+        <?php include 'includes/svg-icons.inc.html.php'?>
       </section>
       <section id="about">
 
