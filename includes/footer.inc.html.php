@@ -1,4 +1,4 @@
-<!-- <footer>
+<footer>
   <ul>
     <li>
       <a href="https://github.com/dylandills">
@@ -13,4 +13,4 @@
   </ul>
   <br />
   <p>Copyright &copy;<?php echo date("Y"); ?>
-</footer> -->
+</footer>

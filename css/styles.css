@@ -164,9 +164,35 @@ body main .container {
   grid-template-columns: auto auto auto;
   padding: 10px;
 }
-body main .icon {
+body main .container .icon {
   padding-top: 10px;
   text-align: center;
+}
+body main .name {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'easycore', Georgia, Serif;
+  background: url("../img/brush-stroke-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  width: 55%;
+  font-size: 3.5em !important;
+  letter-spacing: 0.024em;
+}
+body main .job-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'easycore', Georgia, Serif;
+  background: url("../img/brush-stroke-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  width: 85%;
+  font-size: 3.5em !important;
+  letter-spacing: 0.024em;
 }
 @media (min-width: 48em) {
   body .header li {

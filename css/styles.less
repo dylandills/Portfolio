@@ -139,7 +139,6 @@ body {
       }
     }
   }
-
   //Main
   main {
     // General Section Styles
@@ -160,10 +159,36 @@ body {
       display: grid;
       grid-template-columns: auto auto auto;
       padding: 10px;
+      .icon {
+        padding-top: 10px;
+        text-align: center;
+      }
     }
-    .icon {
-      padding-top: 10px;
-      text-align: center;
+    .name {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'easycore', Georgia, Serif;
+      background: url("../img/brush-stroke-1.png");
+      background-repeat: no-repeat;
+      background-size: 100% 95%;
+      width: 55%;
+      font-size: 3.5em !important;
+      letter-spacing: 0.024em;
+    }
+    .job-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'easycore', Georgia, Serif;
+      background: url("../img/brush-stroke-1.png");
+      background-repeat: no-repeat;
+      background-size: 100% 95%;
+      width: 85%;
+      font-size: 3.5em !important;
+      letter-spacing: 0.024em;
     }
   }
 }
