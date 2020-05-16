@@ -6,7 +6,17 @@
   <body>
     <main>
       <section id="home">
-        <?php include 'includes/svg-icons.inc.html.php'?>
+        <div class="container">
+          <div class="icon animate__animated animate__bounceInLeft">
+            <img src="img/book.png" alt="Book Icon" width="50px" height="50px"/>
+          </div>
+          <div class="icon animate__animated animate__bounceInLeft">
+            <img src="img/book.png" alt="Book Icon" width="50px" height="50px"/>
+          </div>
+          <div class="icon animate__animated animate__bounceInLeft">
+            <img src="img/book.png" alt="Book Icon" width="50px" height="50px"/>
+          </div>
+        </div>
       </section>
       <section id="about">
 

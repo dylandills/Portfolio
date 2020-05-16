@@ -142,7 +142,7 @@ body {
 
   //Main
   main {
-    // Sections
+    // General Section Styles
     section {
       &:first-child, &:nth-child(3) {
         background-color: @main-color;
@@ -155,8 +155,15 @@ body {
         height: 100vh; //to be changed later
       }
     }
-    .icon-container {
-      padding: 1em 1em;
+    //Home Section
+    .container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+    }
+    .icon {
+      padding-top: 10px;
+      text-align: center;
     }
   }
 }
