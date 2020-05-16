@@ -71,8 +71,11 @@
             <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
           </div>
         </div>
-        <h1 class="name">Dylan Dills</h1>
-        <h1 class="job-title">Creative Developer</h1>
+        <span class="name">Dylan Dills</span>
+        <span class="job-title">Creative Developer</span>
+        <div class="arrow bounce">
+          <i class="fa fa-angle-down fa-5x" aria-hidden="true" style="color:#FFFFFF;"></i>
+        </div>
       </section>
       <section id="about">
 
