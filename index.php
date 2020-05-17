@@ -70,6 +70,15 @@
           <div class="icon animate__animated animate__bounceInLeft">
             <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
           </div>
+          <div class="icon animate__animated animate__bounceInLeft">
+            <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
+          </div>
+          <div class="icon animate__animated animate__bounceInLeft">
+            <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
+          </div>
+          <div class="icon animate__animated animate__bounceInLeft">
+            <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
+          </div>
         </div>
         <span class="name">Dylan Dills</span>
         <span class="job-title">Creative Developer</span>

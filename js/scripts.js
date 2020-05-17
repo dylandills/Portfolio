@@ -1,3 +1,11 @@
+//Nav
+  function menuToggle() {
+    var nav = document.getElementById('menu-overlay');
+    nav.classList.toggle('active');
+    var nav = document.getElementById('toggleIcon');
+    nav.classList.toggle('active');
+  }
+
 //Bouncing Arrow on click
 $('#down-arrow').click(function () {
     $('html, body').animate({
