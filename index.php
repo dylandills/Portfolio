@@ -73,12 +73,9 @@
         </div>
         <span class="name">Dylan Dills</span>
         <span class="job-title">Creative Developer</span>
-        <div class="arrow bounce">
-          <i class="fa fa-angle-down fa-5x" aria-hidden="true" style="color:#FFFFFF;"></i>
-        </div>
+        <div class="arrow bounce" id="down-arrow"></div>
       </section>
       <section id="about">
-
       </section>
       <section id="projects">
 
