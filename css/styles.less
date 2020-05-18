@@ -36,6 +36,11 @@ body {
   h6 {
     .headingStyle(@color2;.75em);
   }
+  //Paragraph Styles
+  p {
+    font-family: 'Roboto';
+    font-size: 22px;
+  }
   //Header
    .header {
      background-color: @color1;
@@ -44,7 +49,8 @@ body {
      height: 30%;
      top: 0;
      left: 0;
-     width: 100%;
+     right: 0;
+     min-width: 100%;
      z-index: 3;
      font-family: 'easycore', Georgia, Serif;
      .logo {
@@ -126,6 +132,7 @@ body {
   main {
     // General Section Styles
     section {
+      padding: 10px;
       &:first-child, &:nth-child(3) {
         background-color: @main-color;
         width: 100%;
@@ -143,6 +150,10 @@ body {
       .icon {
         padding-top: 10px;
         text-align: center;
+        img {
+          width: 70px;
+          height: 70px;
+        }
       }
     }
     .name {
@@ -206,8 +217,10 @@ body {
       -moz-transform: translateY(-15px);
       -ms-transform: translateY(-15px);
       -o-transform: translateY(-15px);
-      transform: translateY(-15px); } }
+      transform: translateY(-15px);
+      }
     }
+  }
 }
 
 //Media Queries

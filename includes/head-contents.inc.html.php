@@ -4,7 +4,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <title>Dylan Dills Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
   <link href="css/reset.css" rel="stylesheet" type="text/css">

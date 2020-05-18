@@ -47,6 +47,10 @@ body h6 {
   margin-bottom: 0.375em;
   text-align: center;
 }
+body p {
+  font-family: 'Roboto';
+  font-size: 22px;
+}
 body .header {
   background-color: #ffffff;
   overflow: hidden;
@@ -54,7 +58,8 @@ body .header {
   height: 30%;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  min-width: 100%;
   z-index: 3;
   font-family: 'easycore', Georgia, Serif;
 }
@@ -135,6 +140,9 @@ body .header #toggleIcon.active {
 body main {
   /* Scroll down indicator (bouncing) */
 }
+body main section {
+  padding: 10px;
+}
 body main section:first-child,
 body main section:nth-child(3) {
   background-color: #8bb6c3;
@@ -153,6 +161,10 @@ body main .container {
 body main .container .icon {
   padding-top: 10px;
   text-align: center;
+}
+body main .container .icon img {
+  width: 70px;
+  height: 70px;
 }
 body main .name {
   top: 30%;

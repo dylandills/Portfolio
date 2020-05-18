@@ -8,76 +8,76 @@
       <section id="home">
         <div class="container">
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/book.png" alt="Book Icon" width="50px" height="50px"/>
+            <img src="img/book.png" alt="Book Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/chat.png" alt="Chat Icon" width="50px" height="50px"/>
+            <img src="img/chat.png" alt="Chat Icon" w/>
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/headphones.png" alt="Headphones Icon" width="50px" height="50px"/>
+            <img src="img/headphones.png" alt="Headphones Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/magnifying-glass.png" alt="Magnifying Glass Icon" width="50px" height="50px"/>
+            <img src="img/magnifying-glass.png" alt="Magnifying Glass Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/envelope.png" alt="Envelope Icon" width="50px" height="50px"/>
+            <img src="img/envelope.png" alt="Envelope Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/share.png" alt="Share Icon" width="50px" height="50px"/>
+            <img src="img/share.png" alt="Share Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/speaker.png" alt="Speaker Icon" width="50px" height="50px"/>
+            <img src="img/speaker.png" alt="Speaker Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/upload.png" alt="Upload Icon" width="50px" height="50px"/>
+            <img src="img/upload.png" alt="Upload Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/padlock.png" alt="Padlock Icon" width="50px" height="50px"/>
+            <img src="img/padlock.png" alt="Padlock Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/back.png" alt="Back Icon" width="50px" height="50px"/>
+            <img src="img/back.png" alt="Back Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/next-1.png" alt="Next Icon" width="50px" height="50px"/>
+            <img src="img/next-1.png" alt="Next Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/monitor.png" alt="Monitor Icon" width="50px" height="50px"/>
+            <img src="img/monitor.png" alt="Monitor Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/reload.png" alt="Reload Icon" width="50px" height="50px"/>
+            <img src="img/reload.png" alt="Reload Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/musical-note.png" alt="Music Note Icon" width="50px" height="50px"/>
+            <img src="img/musical-note.png" alt="Music Note Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/shuffle.png" alt="Shuffle Icon" width="50px" height="50px"/>
+            <img src="img/shuffle.png" alt="Shuffle Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/glasses.png" alt="Glasses Icon" width="50px" height="50px"/>
+            <img src="img/glasses.png" alt="Glasses Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/settings-1.png" alt="Settings Icon" width="50px" height="50px"/>
+            <img src="img/settings-1.png" alt="Settings Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/cog.png" alt="Cog Icon" width="50px" height="50px"/>
+            <img src="img/cog.png" alt="Cog Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/vector.png" alt="Vector Icon" width="50px" height="50px"/>
+            <img src="img/vector.png" alt="Vector Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/edit.png" alt="Book Icon" width="50px" height="50px"/>
+            <img src="img/edit.png" alt="Edit Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
+            <img src="img/paper-plane.png" alt="Paper Plane Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
+            <img src="img/hand.png" alt="Hand Pointer Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
+            <img src="img/star.png" alt="Star Icon" />
           </div>
           <div class="icon animate__animated animate__bounceInLeft">
-            <img src="img/paper-plane.png" alt="Book Icon" width="50px" height="50px"/>
+            <img src="img/like.png" alt="Thumbs Up Icon" />
           </div>
         </div>
         <span class="name">Dylan Dills</span>
@@ -87,7 +87,7 @@
       <section id="about">
       </section>
       <section id="projects">
-
+      </section>
       </section>
       <section id="contact">
 
