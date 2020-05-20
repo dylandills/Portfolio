@@ -56,6 +56,7 @@ body .header {
   overflow: hidden;
   position: sticky;
   height: 30%;
+  padding: 10px;
   top: 0;
   left: 0;
   right: 0;
@@ -123,8 +124,8 @@ body .header #toggleIcon {
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: #ffffff url('../img/open.png');
   z-index: 1;
   cursor: pointer;
@@ -268,6 +269,25 @@ body main .bounce {
     -o-transform: translateY(-15px);
     transform: translateY(-15px);
   }
+}
+body main #about .about-title {
+  margin-top: 1em;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'easycore', Georgia, Serif;
+  background: url("../img/brush-stroke-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding-left: 5px;
+  font-size: 3.5em !important;
+  letter-spacing: 0.024em;
+}
+body main #about img {
+  margin-top: -3.125em;
+}
+body main #about p {
+  padding: 10px;
 }
 @media (min-width: 48em) {
   body .container {
