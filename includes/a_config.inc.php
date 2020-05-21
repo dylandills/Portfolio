@@ -1,13 +1,12 @@
 <?php
-try
-{
-  $pdo = new PDO('mysql:host=localhost;dbname=dylandil_portfolio', 'dylandil_main_user', 'qWE-are135');
-  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $pdo->exec('SET NAMES "utf8"');
-}
-catch (PDOException $e)
-{
-  $error = 'Unable to connect to the database server.';
-  include 'includes/error.html.php';
-  exit();
-}
+  $host = "localhost";
+  $userName = "dylandil_main_user";
+  $password = "qWE-are135";
+  $dbName = "dylandil_portfolio";
+  // Create database connection
+  $conn = new mysqli($host, $userName, $password, $dbName);
+  // Check connection
+  if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+  }
+?>

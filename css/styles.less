@@ -240,6 +240,9 @@ body {
         position: relative;
         margin: 1em 0 0;
       }
+      hr {
+        margin: 2em 0;
+      }
       .single-project {
         .single-project-title {
           .titleStyle;
@@ -250,74 +253,75 @@ body {
         .button-wrapper {
           display: flex;
           justify-content: center;
-          .btn {
+          .button-styles;
+        }
+      }
+    }
+    //Contact Section
+    #contact {
+      .contact-title {
+        .titleStyle-2;
+      }
+      p {
+        margin-top: -3em
+      }
+      form {
+        font-family: 'Roboto';
+        #loading-img{
+          display:none;
+        }
+        .response_msg{
+          margin-top: 10px;
+          font-size: 13px;
+          background: @main-color;
+          color:@color1;
+          width: 100%;
+          padding: 3px;
+          display: none;
+        }
+        input[type=text], input[type=email], textarea {
+          width: 100%;
+          padding: 12px;
+          border: 2px solid @color2;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        .row {
+          display: flex;
+          justify-content: center;
+          button[type=submit] {
+            background-color: @color2;
+            color: @color1;
+            padding: 12px 20px;
             border: none;
-          	.easycore;
-            font-size: 1.8em;
-          	background: none;
-          	cursor: pointer;
-          	padding: 5% 22%;
-          	display: inline-block;
-          	margin: 15px 30px;
-          	text-transform: uppercase;
-          	letter-spacing: 2px;
-          	outline: none;
-          	position: relative;
-          	-webkit-transition: all 0.3s;
-          	-moz-transition: all 0.3s;
-          	transition: all 0.3s;
-            &:after {
-              content: '';
-            	position: absolute;
-            	z-index: -1;
-            	-webkit-transition: all 0.3s;
-            	-moz-transition: all 0.3s;
-            	transition: all 0.3s;
-            }
+            border-radius: 4px;
+            cursor: pointer;
+            width: 50%;
+            margin: 20px;
+            .easycore;
+            font-size: 2em;
+            letter-spacing: 3px;
           }
-          .icon-arrow-right:before {
-            font-family: 'FontAwesome';
-          	content: "\f061";
-            font-size: .65em !important;
-          }
-          .btn-4 {
-            border-radius: 10px;
-          	border: 3px solid @color1;
-          	color: @color1;
-          	overflow: hidden;
-            &:active {
-              border-color: @color1;
-              color: @color1;
-              &:before {
-                color: @color1;
-              }
-            }
-            &:hover {
-              background: @color1;
-              color: @color2;
-              border-color: @color2;
-            }
-            &:before {
-              position: absolute;
-              height: 100%;
-              font-size: 125%;
-              line-height: 3.5;
-              color: @color2;
-              -webkit-transition: all 0.3s;
-              -moz-transition: all 0.3s;
-              transition: all 0.3s;
-            }
-          }
-          .btn-4a {
-            &:before {
-              left: 130%;
-            	top: 0;
-            }
-            &:hover {
-              &:before {
-                left: 80%;
-              }
-            }
+        }
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+        .col-25 {
+          float: left;
+          width: 25%;
+          margin-top: 6px;
+        }
+        .col-75 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+        .row {
+          &:after {
+            content: "";
+            display: table;
+            clear: both;
           }
         }
       }
@@ -340,6 +344,11 @@ body {
           height: 70px;
         }
       }
+    }
+    //Contact section
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
     }
   }
 }

@@ -297,6 +297,9 @@ body main #projects .project-title {
   position: relative;
   margin: 1em 0 0;
 }
+body main #projects hr {
+  margin: 2em 0;
+}
 body main #projects .single-project .single-project-title {
   left: 50%;
   transform: translate(-50%, -50%);
@@ -317,7 +320,7 @@ body main #projects .single-project .button-wrapper .btn {
   border: none;
   font-family: 'easycore', Georgia, Serif;
   font-size: 1.8em;
-  background: none;
+  background: #000000;
   cursor: pointer;
   padding: 5% 22%;
   display: inline-block;
@@ -378,6 +381,82 @@ body main #projects .single-project .button-wrapper .btn-4a:before {
 body main #projects .single-project .button-wrapper .btn-4a:hover:before {
   left: 80%;
 }
+body main #contact .contact-title {
+  margin-top: 1em;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'easycore', Georgia, Serif;
+  background: url("../img/brush-stroke-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding-left: 5px;
+  font-size: 3.5em !important;
+  letter-spacing: 0.024em;
+}
+body main #contact p {
+  margin-top: -3em;
+}
+body main #contact form {
+  font-family: 'Roboto';
+}
+body main #contact form #loading-img {
+  display: none;
+}
+body main #contact form .response_msg {
+  margin-top: 10px;
+  font-size: 13px;
+  background: #8bb6c3;
+  color: #ffffff;
+  width: 100%;
+  padding: 3px;
+  display: none;
+}
+body main #contact form input[type=text],
+body main #contact form input[type=email],
+body main #contact form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  resize: vertical;
+}
+body main #contact form .row {
+  display: flex;
+  justify-content: center;
+}
+body main #contact form .row button[type=submit] {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%;
+  margin: 20px;
+  font-family: 'easycore', Georgia, Serif;
+  font-size: 2em;
+  letter-spacing: 3px;
+}
+body main #contact form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+body main #contact form .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+body main #contact form .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+body main #contact form .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media (min-width: 48em) {
   body .container {
     grid-template-columns: auto auto auto auto !important;
@@ -385,5 +464,11 @@ body main #projects .single-project .button-wrapper .btn-4a:hover:before {
   body .container .icon img {
     width: 70px;
     height: 70px;
+  }
+  body .col-25,
+  body .col-75,
+  body input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }

@@ -92,6 +92,7 @@
       <section id="projects">
         <h1 class="project-title">Projects</h1>
         <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+        <hr />
         <div class="single-project">
           <h2 class="single-project-title">Alien Boy</h2>
           <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
@@ -99,11 +100,64 @@
           <div class="button-wrapper">
             <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
           </div>
+          <hr />
+        </div>
+        <div class="single-project">
+          <h2 class="single-project-title">Alien Boy</h2>
+          <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
+          <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+          <div class="button-wrapper">
+            <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+          </div>
+          <hr />
+        </div>
+        <div class="single-project">
+          <h2 class="single-project-title">Alien Boy</h2>
+          <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
+          <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+          <div class="button-wrapper">
+            <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+          </div>
+          <hr />
         </div>
       </section>
-      </section>
       <section id="contact">
-
+        <h1 class="contact-title">Contact</h1>
+        <p>I'm baby austin flannel sriracha wayfarers four dollar toast yr. Meh tofu chambray truffaut art party cold-pressed. Direct trade kinfolk health goth, ramps kitsch palo santo narwhal adaptogen thundercats bespoke.</p>
+        <form name="contact-form" action="" method="post" id="contact-form">
+          <!--Name -->
+          <div class="row">
+            <div class="col-25">
+              <label for="Name">Name:</label>
+            </div>
+            <div class="col-75">
+              <input type="text" class="form-control" name="your_name" placeholder="Name" required>
+            </div>
+          </div>
+          <!--Email -->
+          <div class="row">
+            <div class="col-25">
+              <label for="exampleInputEmail1">Email address:</label>
+            </div>
+            <div class="col-75">
+              <input type="email" class="form-control" name="your_email" placeholder="Email" required>
+            </div>
+          </div>
+          <!--Message -->
+          <div class="row">
+            <div class="col-25">
+              <label for="message">Message:</label>
+            </div>
+            <div class="col-75">
+               <textarea name="message" class="form-control" style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+             <button type="submit" name="submit" value="Submit" id="submit_form">Submit</button>
+          </div>
+          <img src="img/loading.gif" id="loading-img">
+        </form>
+        <div class="response_msg"></div>
       </section>
     </main>
     <?php include 'includes/footer.inc.html.php';?>

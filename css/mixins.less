@@ -49,3 +49,74 @@
 }
 
 //Button Styles
+.button-styles() {
+  .btn {
+    border: none;
+    .easycore;
+    font-size: 1.8em;
+    background: @color2;
+    cursor: pointer;
+    padding: 5% 22%;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+  .icon-arrow-right:before {
+    font-family: 'FontAwesome';
+    content: "\f061";
+    font-size: .65em !important;
+  }
+  .btn-4 {
+    border-radius: 10px;
+    border: 3px solid @color1;
+    color: @color1;
+    overflow: hidden;
+    &:active {
+      border-color: @color1;
+      color: @color1;
+      &:before {
+        color: @color1;
+      }
+    }
+    &:hover {
+      background: @color1;
+      color: @color2;
+      border-color: @color2;
+    }
+    &:before {
+      position: absolute;
+      height: 100%;
+      font-size: 125%;
+      line-height: 3.5;
+      color: @color2;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+  }
+  .btn-4a {
+    &:before {
+      left: 130%;
+      top: 0;
+    }
+    &:hover {
+      &:before {
+        left: 80%;
+      }
+    }
+  }
+}
