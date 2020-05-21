@@ -53,7 +53,7 @@ body {
      right: 0;
      min-width: 100%;
      z-index: 3;
-     font-family: 'easycore', Georgia, Serif;
+     .easycore;
      .logo {
       color: @color2;
       text-decoration: none;
@@ -134,6 +134,9 @@ body {
     // General Section Styles
     section {
       padding: 10px;
+      p {
+        padding: 10px;
+      }
       &:first-child, &:nth-child(3) {
         background-color: @main-color;
         width: 100%;
@@ -160,10 +163,12 @@ body {
     .name {
       top: 30%;
       .titleStyle;
+      position: absolute;
     }
     .job-title {
       top: 50%;
       .titleStyle;
+      position: absolute;
       text-align: center;
       width: 80%;
     }
@@ -228,8 +233,93 @@ body {
       img {
         margin-top: -3.125em;
       }
-      p {
-        padding: 10px;
+    }
+    #projects {
+      .project-title {
+        .titleStyle;
+        position: relative;
+        margin: 1em 0 0;
+      }
+      .single-project {
+        .single-project-title {
+          .titleStyle;
+          position: relative;
+          margin: 1em 0 0;
+        }
+        // Button Styling
+        .button-wrapper {
+          display: flex;
+          justify-content: center;
+          .btn {
+            border: none;
+          	.easycore;
+            font-size: 1.8em;
+          	background: none;
+          	cursor: pointer;
+          	padding: 5% 22%;
+          	display: inline-block;
+          	margin: 15px 30px;
+          	text-transform: uppercase;
+          	letter-spacing: 2px;
+          	outline: none;
+          	position: relative;
+          	-webkit-transition: all 0.3s;
+          	-moz-transition: all 0.3s;
+          	transition: all 0.3s;
+            &:after {
+              content: '';
+            	position: absolute;
+            	z-index: -1;
+            	-webkit-transition: all 0.3s;
+            	-moz-transition: all 0.3s;
+            	transition: all 0.3s;
+            }
+          }
+          .icon-arrow-right:before {
+            font-family: 'FontAwesome';
+          	content: "\f061";
+            font-size: .65em !important;
+          }
+          .btn-4 {
+            border-radius: 10px;
+          	border: 3px solid @color1;
+          	color: @color1;
+          	overflow: hidden;
+            &:active {
+              border-color: @color1;
+              color: @color1;
+              &:before {
+                color: @color1;
+              }
+            }
+            &:hover {
+              background: @color1;
+              color: @color2;
+              border-color: @color2;
+            }
+            &:before {
+              position: absolute;
+              height: 100%;
+              font-size: 125%;
+              line-height: 3.5;
+              color: @color2;
+              -webkit-transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              transition: all 0.3s;
+            }
+          }
+          .btn-4a {
+            &:before {
+              left: 130%;
+            	top: 0;
+            }
+            &:hover {
+              &:before {
+                left: 80%;
+              }
+            }
+          }
+        }
       }
     }
   }

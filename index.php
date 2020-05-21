@@ -90,6 +90,16 @@
         <p>Keytar +1 man braid, raclette before they sold out lumbersexual fixie jianbing health goth sustainable kale chips bushwick humblebrag cliche. PBR&B waistcoat twee YOLO lyft franzen. Selfies bespoke salvia deep v vice, organic taiyaki shabby chic letterpress crucifix pinterest blue bottle artisan. Viral YOLO vexillologist thundercats craft beer vinyl plaid palo santo messenger bag ugh gentrify deep v lomo succulents. Synth copper mug helvetica pitchfork gentrify roof party chartreuse fanny pack. Sustainable fingerstache la croix pabst ennui.</p>
       </section>
       <section id="projects">
+        <h1 class="project-title">Projects</h1>
+        <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+        <div class="single-project">
+          <h2 class="single-project-title">Alien Boy</h2>
+          <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
+          <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+          <div class="button-wrapper">
+            <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+          </div>
+        </div>
       </section>
       </section>
       <section id="contact">
