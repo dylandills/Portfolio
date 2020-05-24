@@ -11,5 +11,5 @@
   <link href="css/helper.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="https://use.fontawesome.com/79fd4f868d.js"></script>
+  <script src="https://kit.fontawesome.com/fa7aaf6c7e.js" crossorigin="anonymous"></script>
 </head>

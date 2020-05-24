@@ -145,39 +145,28 @@ body .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 body .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-body main {
-  /* Scroll down indicator (bouncing) */
-}
 body main section {
   padding: 10px;
 }
 body main section p {
   padding: 10px;
 }
-body main section:first-child,
-body main section:nth-child(3) {
+body main #home {
   background-color: #8bb6c3;
-  width: 100%;
+  padding: 50px;
 }
-body main section:nth-child(2),
-body main section:last-child {
-  background-color: #ffffff;
-  width: 100%;
-}
-body main .container {
+body main #home .home-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  padding: 20px;
+  grid-row-gap: 30px;
+  column-gap: 30px;
+  padding: 50px;
 }
-body main .container .icon {
+body main #home .home-container .icon {
   padding-top: 10px;
   text-align: center;
 }
-body main .container .icon img {
-  width: 70px;
-  height: 70px;
-}
-body main .name {
+body main #home .name {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -188,8 +177,11 @@ body main .name {
   font-size: 3.5em !important;
   letter-spacing: 0.024em;
   position: absolute;
+  text-align: center;
+  width: 40%;
+  padding: 20px;
 }
-body main .job-title {
+body main #home .job-title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -201,9 +193,10 @@ body main .job-title {
   letter-spacing: 0.024em;
   position: absolute;
   text-align: center;
-  width: 80%;
+  width: 40%;
+  padding: 20px;
 }
-body main .arrow {
+body main #home .arrow {
   position: fixed;
   text-decoration: none;
   bottom: 0;
@@ -215,7 +208,7 @@ body main .arrow {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
   background-size: contain;
 }
-body main .bounce {
+body main #home .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
@@ -287,10 +280,18 @@ body main #about .about-title {
   background-size: 100% 95%;
   padding-left: 5px;
   font-size: 3.5em !important;
-  letter-spacing: 0.024em;
+  letter-spacing: 5px;
+  width: 40%;
 }
-body main #about img {
+body main #about .container {
+  display: grid;
+  grid-template-columns: auto;
+}
+body main #about .container img {
   margin-top: -3.125em;
+}
+body main #projects {
+  background-color: #8bb6c3;
 }
 body main #projects .project-title {
   left: 50%;
@@ -388,79 +389,6 @@ body main #projects .single-project .button-wrapper .btn-4a:before {
 body main #projects .single-project .button-wrapper .btn-4a:hover:before {
   left: 80%;
 }
-body main #contact .contact-title {
-  margin-top: 1em;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'easycore', Georgia, Serif;
-  background: url("../img/brush-stroke-2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 95%;
-  padding-left: 5px;
-  font-size: 3.5em !important;
-  letter-spacing: 0.024em;
-}
-body main #contact p {
-  margin-top: -3em;
-}
-body main #contact form {
-  font-family: 'Roboto';
-  padding: 20px;
-  display: grid;
-  grid-template-columns: auto;
-  justify-items: center;
-  align-items: center;
-}
-body main #contact form .col-25,
-body main #contact form .col-75 {
-  width: 100%;
-  margin-top: 0;
-}
-body main #contact form input[type=text],
-body main #contact form input[type=email],
-body main #contact form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1.5px solid #000000;
-  border-radius: 4px;
-  resize: vertical;
-}
-body main #contact form button[type=submit] {
-  width: 200px;
-  height: 45px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  margin: 20px;
-}
-body main #contact form button[type=submit]:hover {
-  background-color: #8bb6c3;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  transform: translateY(-7px);
-}
-body main #contact form label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-body main #contact form .field {
-  width: 100%;
-}
-body main #contact form .field:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 @media (min-width: 48em) {
   body .header li {
     float: left;
@@ -476,12 +404,12 @@ body main #contact form .field:after {
   body .header .menu-icon {
     display: none;
   }
-  body .container {
+  body #home .container {
     grid-template-columns: auto auto auto auto !important;
   }
-  body .container .icon img {
-    width: 70px;
-    height: 70px;
+  body #about .container {
+    grid-template-columns: auto auto !important;
+    column-gap: 20px;
   }
   body #contact form {
     display: grid;
