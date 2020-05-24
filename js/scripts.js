@@ -18,37 +18,46 @@ $(window).scroll(function(){
   //250 is fade pixels
   });
 
-  //Contact Form
-  $(document).ready(function(){
-    $("#contact-form").on("submit",function(e){
-      e.preventDefault();
-      if($("#contact-form [name='first_name']").val() === '') {
-        $("#contact-form [name='first_name']").css("border","1px solid red");
-      }else if($("#contact-form [name='last_name']").val() === '') {
-        $("#contact-form [name='last_name']").css("border","1px solid red");
-      }else if ($("#contact-form [name='your_email']").val() === '') {
-        $("#contact-form [name='your_email']").css("border","1px solid red");
-      } else {
-        $("#loading-img").css("display","block");
-        var sendData = $( this ).serialize();
-        $.ajax({
-          type: "POST",
-          url: "get_response.php",
-          data: sendData,
-          success: function(data){
-          $("#loading-img").css("display","none");
-          $(".response_msg").text(data);
-          $(".response_msg").slideDown();
-          $("#contact-form").find("input[type=text], input[type=email], textarea").val("");
-          }
-        });
-      }
-    });
-
-    $("#contact-form input").blur(function(){
-    var checkValue = $(this).val();
-    if(checkValue != '') {
-      $(this).css("border","1px solid #eeeeee");
-    }
-  });
+//Contact Form
+$(function() {
+	// Get the form.
+	var form = $('#ajax-contact');
+	// Get the messages div.
+	var formMessages = $('#form-messages');
+	// Set up an event listener for the contact form.
+	$(form).submit(function(e) {
+		// Stop the browser from submitting the form.
+		e.preventDefault();
+		// Serialize the form data.
+		var formData = $(form).serialize();
+		// Submit the form using AJAX.
+		$.ajax({
+			type: 'POST',
+			url: $(form).attr('action'),
+			data: formData
+		})
+		.done(function(response) {
+			// Make sure that the formMessages div has the 'success' class.
+			$(formMessages).removeClass('error');
+			$(formMessages).addClass('success');
+			// Set the message text.
+			$(formMessages).text(response);
+			// Clear the form.
+			$('#name').val('');
+			$('#email').val('');
+			$('#subject').val('');
+			$('#message').val('');
+		})
+		.fail(function(data) {
+			// Make sure that the formMessages div has the 'error' class.
+			$(formMessages).removeClass('success');
+			$(formMessages).addClass('error');
+			// Set the message text.
+			if (data.responseText !== '') {
+				$(formMessages).text(data.responseText);
+			} else {
+				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+			}
+		});
+	});
 });

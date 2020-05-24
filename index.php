@@ -124,40 +124,27 @@
       <section id="contact">
         <h1 class="contact-title">Contact</h1>
         <p>I'm baby austin flannel sriracha wayfarers four dollar toast yr. Meh tofu chambray truffaut art party cold-pressed. Direct trade kinfolk health goth, ramps kitsch palo santo narwhal adaptogen thundercats bespoke.</p>
-        <form name="contact-form" action="" method="post" id="contact-form">
-          <!--Name -->
-          <div class="row">
-            <div class="col-25">
-              <label for="Name">Name:</label>
+        <form id="ajax-contact" method="post" action="mailer.php">
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-            <div class="col-75">
-              <input type="text" class="form-control" name="your_name" placeholder="Name" required>
+
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
-          </div>
-          <!--Email -->
-          <div class="row">
-            <div class="col-25">
-              <label for="exampleInputEmail1">Email address:</label>
+
+            <div class="field">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
             </div>
-            <div class="col-75">
-              <input type="email" class="form-control" name="your_email" placeholder="Email" required>
+
+            <div class="field">
+                <button type="submit">Send</button>
             </div>
-          </div>
-          <!--Message -->
-          <div class="row">
-            <div class="col-25">
-              <label for="message">Message:</label>
-            </div>
-            <div class="col-75">
-               <textarea name="message" class="form-control" style="height:200px"></textarea>
-            </div>
-          </div>
-          <div class="row">
-             <button type="submit" name="submit" value="Submit" id="submit_form">Submit</button>
-          </div>
-          <img src="img/loading.gif" id="loading-img">
         </form>
-        <div class="response_msg"></div>
+        <div id="form-messages"></div>
       </section>
     </main>
     <?php include 'includes/footer.inc.html.php';?>
