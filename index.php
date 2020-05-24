@@ -125,19 +125,32 @@
         <h1 class="contact-title">Contact</h1>
         <p>I'm baby austin flannel sriracha wayfarers four dollar toast yr. Meh tofu chambray truffaut art party cold-pressed. Direct trade kinfolk health goth, ramps kitsch palo santo narwhal adaptogen thundercats bespoke.</p>
         <form id="ajax-contact" method="post" action="mailer.php">
+          <!---Name Field --->
             <div class="field">
+              <div class="col-25">
                 <label for="name">Name:</label>
+              </div>
+              <div class="col-75">
                 <input type="text" id="name" name="name" required>
+              </div>
             </div>
-
+            <!---Email Field --->
             <div class="field">
+              <div class="col-25">
                 <label for="email">Email:</label>
+              </div>
+              <div class="col-75">
                 <input type="email" id="email" name="email" required>
+              </div>
             </div>
-
+            <!---Message Field --->
             <div class="field">
+              <div class="col-25">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+              </div>
+              <div class="col-75">
+                <textarea id="message" name="message" style="height:200px" required></textarea>
+              </div>
             </div>
 
             <div class="field">

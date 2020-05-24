@@ -72,6 +72,8 @@ body .header ul li a {
   padding: 20px 20px;
   text-decoration: none;
   font-size: 3em;
+  color: #000000;
+  text-align: center;
 }
 body .header ul li a:hover {
   background-color: #f4f4f4;
@@ -82,6 +84,7 @@ body .header .logo {
   font-size: 3.5em;
   padding: 10px 20px;
   text-decoration: none;
+  color: #000000;
 }
 body .header .menu {
   clear: both;
@@ -404,7 +407,62 @@ body main #contact p {
 body main #contact form {
   font-family: 'Roboto';
 }
+body main #contact form input[type=text],
+body main #contact form input[type=email],
+body main #contact form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #000000;
+  border-radius: 4px;
+  resize: vertical;
+}
+body main #contact form button[type=submit] {
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 10% 30%;
+}
+body main #contact form button[type=submit]:hover {
+  background-color: #8bb6c3;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #ffffff;
+  transform: translateY(-7px);
+}
+body main #contact form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+body main #contact form .field:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media (min-width: 48em) {
+  body .header li {
+    float: left;
+  }
+  body .header li a {
+    padding: 20px 30px;
+  }
+  body .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  body .header .menu-icon {
+    display: none;
+  }
   body .container {
     grid-template-columns: auto auto auto auto !important;
   }
@@ -414,7 +472,7 @@ body main #contact form {
   }
   body .col-25,
   body .col-75,
-  body input[type=submit] {
+  body button[type=submit] {
     width: 100%;
     margin-top: 0;
   }
