@@ -290,10 +290,10 @@ body main #about .container {
 body main #about .container img {
   margin-top: -3.125em;
 }
-body main #projects {
+body main #portfolio {
   background-color: #8bb6c3;
 }
-body main #projects .project-title {
+body main #portfolio .project-title {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'easycore', Georgia, Serif;
@@ -305,10 +305,10 @@ body main #projects .project-title {
   position: relative;
   margin: 1em 0 0;
 }
-body main #projects hr {
+body main #portfolio hr {
   margin: 2em 0;
 }
-body main #projects .single-project .single-project-title {
+body main #portfolio .single-project-title {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'easycore', Georgia, Serif;
@@ -320,17 +320,21 @@ body main #projects .single-project .single-project-title {
   position: relative;
   margin: 1em 0 0;
 }
-body main #projects .single-project .button-wrapper {
+body main #portfolio .single-project {
+  display: grid;
+  grid-template-columns: auto;
+}
+body main #portfolio .single-project .button-wrapper {
   display: flex;
   justify-content: center;
 }
-body main #projects .single-project .button-wrapper .btn {
+body main #portfolio .single-project .button-wrapper .btn {
   border: none;
   font-family: 'easycore', Georgia, Serif;
   font-size: 1.8em;
   background: #000000;
   cursor: pointer;
-  padding: 5% 22%;
+  padding: 10px 50px;
   display: inline-block;
   margin: 15px 30px;
   text-transform: uppercase;
@@ -341,7 +345,7 @@ body main #projects .single-project .button-wrapper .btn {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-body main #projects .single-project .button-wrapper .btn:after {
+body main #portfolio .single-project .button-wrapper .btn:after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -349,30 +353,30 @@ body main #projects .single-project .button-wrapper .btn:after {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-body main #projects .single-project .button-wrapper .icon-arrow-right:before {
+body main #portfolio .single-project .button-wrapper .icon-arrow-right:before {
   font-family: 'FontAwesome';
   content: "\f061";
-  font-size: .65em !important;
+  font-size: .6em !important;
 }
-body main #projects .single-project .button-wrapper .btn-4 {
-  border-radius: 10px;
+body main #portfolio .single-project .button-wrapper .btn-4 {
   border: 3px solid #ffffff;
+  border-radius: 48px;
   color: #ffffff;
   overflow: hidden;
 }
-body main #projects .single-project .button-wrapper .btn-4:active {
+body main #portfolio .single-project .button-wrapper .btn-4:active {
   border-color: #ffffff;
   color: #ffffff;
 }
-body main #projects .single-project .button-wrapper .btn-4:active:before {
+body main #portfolio .single-project .button-wrapper .btn-4:active:before {
   color: #ffffff;
 }
-body main #projects .single-project .button-wrapper .btn-4:hover {
+body main #portfolio .single-project .button-wrapper .btn-4:hover {
   background: #ffffff;
   color: #000000;
   border-color: #000000;
 }
-body main #projects .single-project .button-wrapper .btn-4:before {
+body main #portfolio .single-project .button-wrapper .btn-4:before {
   position: absolute;
   height: 100%;
   font-size: 125%;
@@ -382,11 +386,11 @@ body main #projects .single-project .button-wrapper .btn-4:before {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-body main #projects .single-project .button-wrapper .btn-4a:before {
+body main #portfolio .single-project .button-wrapper .btn-4a:before {
   left: 130%;
   top: 0;
 }
-body main #projects .single-project .button-wrapper .btn-4a:hover:before {
+body main #portfolio .single-project .button-wrapper .btn-4a:hover:before {
   left: 80%;
 }
 @media (min-width: 48em) {
@@ -408,6 +412,12 @@ body main #projects .single-project .button-wrapper .btn-4a:hover:before {
     grid-template-columns: auto auto auto auto !important;
   }
   body #about .container {
+    display: grid;
+    grid-template-columns: auto auto !important;
+    column-gap: 20px;
+  }
+  body #portfolio .single-project {
+    display: grid;
     grid-template-columns: auto auto !important;
     column-gap: 20px;
   }

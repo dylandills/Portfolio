@@ -235,14 +235,13 @@ body {
         .titleStyle-2;
       }
       .container {
-        display: grid;
-        grid-template-columns: auto;
+        .grid;
         img {
           margin-top: -3.125em;
         }
       }
     }
-    #projects {
+    #portfolio {
       background-color: @main-color;
       .project-title {
         .titleStyle;
@@ -252,12 +251,13 @@ body {
       hr {
         margin: 2em 0;
       }
+      .single-project-title {
+        .titleStyle;
+        position: relative;
+        margin: 1em 0 0;
+      }
       .single-project {
-        .single-project-title {
-          .titleStyle;
-          position: relative;
-          margin: 1em 0 0;
-        }
+        .grid;
         // Button Styling
         .button-wrapper {
           display: flex;
@@ -360,16 +360,19 @@ body {
     //About Section
     #about {
       .container {
-        grid-template-columns: auto auto !important;
-        column-gap: 20px;
+        .large-grid;
+      }
+    }
+    #portfolio {
+      .single-project {
+        .large-grid;
       }
     }
     //Contact section
     #contact {
       form {
         display: grid;
-        grid-template-columns: auto auto !important;
-        column-gap: 20px;
+        .large-grid;
         .field {
           &:last-child {
             grid-row-end: span 2;

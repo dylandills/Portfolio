@@ -58,6 +58,20 @@
   padding: 20px;
 }
 
+//Mobile Grid
+
+.grid() {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+//Tablet & Desktop grid
+.large-grid() {
+  display: grid;
+  grid-template-columns: auto auto !important;
+  column-gap: 20px;
+}
+
 //Button Styles
 .button-styles() {
   .btn {
@@ -66,7 +80,7 @@
     font-size: 1.8em;
     background: @color2;
     cursor: pointer;
-    padding: 5% 22%;
+    padding: 10px 50px;
     display: inline-block;
     margin: 15px 30px;
     text-transform: uppercase;
@@ -88,11 +102,11 @@
   .icon-arrow-right:before {
     font-family: 'FontAwesome';
     content: "\f061";
-    font-size: .65em !important;
+    font-size: .6em !important;
   }
   .btn-4 {
-    border-radius: 10px;
     border: 3px solid @color1;
+    border-radius: 48px;
     color: @color1;
     overflow: hidden;
     &:active {

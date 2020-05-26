@@ -95,32 +95,45 @@
         <h1 class="project-title">Projects</h1>
         <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
         <hr />
+        <h2 class="single-project-title">Alien Boy</h2>
         <div class="single-project">
-          <h2 class="single-project-title">Alien Boy</h2>
-          <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
-          <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
-          <div class="button-wrapper">
-            <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+          <div class="image">
+            <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
           </div>
-          <hr />
+          <div class="paragraph-button">
+            <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+            <div class="button-wrapper">
+              <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+            </div>
+          </div>
         </div>
+        <hr />
+        <h2 class="single-project-title">Ace In The Hole</h2>
         <div class="single-project">
-          <h2 class="single-project-title">Alien Boy</h2>
-          <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
-          <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
-          <div class="button-wrapper">
-            <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+          <div class="image">
+            <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
           </div>
-          <hr />
+          <div class="paragraph-button">
+            <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+            <div class="button-wrapper">
+              <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+            </div>
+          </div>
         </div>
+        <hr />
+        <h2 class="single-project-title">Burrito Masala</h2>
         <div class="single-project">
-          <h2 class="single-project-title">Alien Boy</h2>
-          <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
-          <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
-          <div class="button-wrapper">
-            <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+          <div class="image">
+            <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
           </div>
-          <hr />
+          <div class="paragraph-button">
+            <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+            <div class="button-wrapper">
+              <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+            </div>
+          </div>
+        </div>
+        <hr />
         </div>
       </section>
       <!--- <section id="contact">
