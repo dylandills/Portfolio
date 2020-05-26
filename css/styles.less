@@ -124,7 +124,7 @@ body {
      display: none;
    }
    .menu-btn:checked ~ .menu {
-     max-height: 100vh;
+     max-height: 100%;
    }
    .menu-btn:checked ~ .menu-icon .navicon {
      background: transparent;
@@ -145,7 +145,7 @@ body {
   main {
     // General Section Styles
     section {
-      padding: 10px;
+      padding: 20px;
       p {
         padding: 10px;
       }
@@ -266,69 +266,66 @@ body {
         }
       }
     }
-  //   //Contact Section
-  //   #contact {
-  //     .contact-title {
-  //       .titleStyle-2;
-  //     }
-  //     p {
-  //       margin-top: -3em
-  //     }
-  //     form {
-  //       font-family: 'Roboto';
-  //       padding: 20px;
-  //       display: grid;
-  //       grid-template-columns: auto;
-  //       justify-items: center;
-  //       align-items: center;
-  //       .col-25, .col-75 {
-  //         width: 100%;
-  //         margin-top: 0;
-  //       }
-  //       input[type=text], input[type=email], textarea {
-  //         width: 100%;
-  //         padding: 12px;
-  //         border: 1.5px solid @color2;
-  //         border-radius: 4px;
-  //         resize: vertical;
-  //       }
-  //       button[type=submit] {
-  //         width: 200px;
-  //         height: 45px;
-  //         font-size: 11px;
-  //         text-transform: uppercase;
-  //         letter-spacing: 2.5px;
-  //         font-weight: 700;
-  //         color: @color2;
-  //         background-color: @color1;
-  //         border: none;
-  //         border-radius: 45px;
-  //         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-  //         transition: all 0.3s ease 0s;
-  //         cursor: pointer;
-  //         outline: none;
-  //         margin: 20px;
-  //         &:hover {
-  //           background-color: @main-color;
-  //           box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
-  //           color: @color1;
-  //           transform: translateY(-7px);
-  //         }
-  //       }
-  //       label {
-  //       padding: 12px 12px 12px 0;
-  //       display: inline-block;
-  //       }
-  //       .field {
-  //         width: 100%;
-  //         &:after {
-  //         content: "";
-  //         display: table;
-  //         clear: both;
-  //         }
-  //       }
-  //     }
-  //   }
+    //Contact Section
+    #contact {
+      .contact-title {
+        .titleStyle-2;
+      }
+      p {
+        margin-top: -3em
+      }
+      form {
+        font-family: 'Roboto';
+        padding: 20px;
+        .grid;
+        .col-25, .col-75 {
+          width: 100%;
+          margin-top: 0;
+        }
+        input[type=text], input[type=email], textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1.5px solid @color2;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        }
+        .field {
+          width: 100%;
+          &:after {
+          content: "";
+          display: table;
+          clear: both;
+          }
+          button[type=submit] {
+            width: 200px;
+            height: 45px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 700;
+            color: @color2;
+            background-color: @color1;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            margin: 20px;
+            &:hover {
+              background-color: @main-color;
+              box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+              color: @color1;
+              transform: translateY(-7px);
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -371,11 +368,11 @@ body {
     //Contact section
     #contact {
       form {
-        display: grid;
         .large-grid;
         .field {
           &:last-child {
-            grid-row-end: span 2;
+            grid-column-end: span 2;
+            text-align: center;
           }
           &:nth-child(3) {
             grid-column-end: span 2;

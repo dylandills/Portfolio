@@ -130,7 +130,7 @@ body .header .menu-btn {
   display: none;
 }
 body .header .menu-btn:checked ~ .menu {
-  max-height: 100vh;
+  max-height: 100%;
 }
 body .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
@@ -146,7 +146,7 @@ body .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 body main section {
-  padding: 10px;
+  padding: 20px;
 }
 body main section p {
   padding: 10px;
@@ -175,11 +175,10 @@ body main #home .name {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-size: 3.5em !important;
-  letter-spacing: 0.024em;
+  letter-spacing: 5px;
+  width: 40%;
   position: absolute;
   text-align: center;
-  width: 40%;
-  padding: 20px;
 }
 body main #home .job-title {
   top: 50%;
@@ -190,11 +189,10 @@ body main #home .job-title {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-size: 3.5em !important;
-  letter-spacing: 0.024em;
+  letter-spacing: 5px;
+  width: 40%;
   position: absolute;
   text-align: center;
-  width: 40%;
-  padding: 20px;
 }
 body main #home .arrow {
   position: fixed;
@@ -301,7 +299,8 @@ body main #portfolio .project-title {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-size: 3.5em !important;
-  letter-spacing: 0.024em;
+  letter-spacing: 5px;
+  width: 40%;
   position: relative;
   margin: 1em 0 0;
 }
@@ -316,7 +315,8 @@ body main #portfolio .single-project-title {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-size: 3.5em !important;
-  letter-spacing: 0.024em;
+  letter-spacing: 5px;
+  width: 40%;
   position: relative;
   margin: 1em 0 0;
 }
@@ -393,6 +393,78 @@ body main #portfolio .single-project .button-wrapper .btn-4a:before {
 body main #portfolio .single-project .button-wrapper .btn-4a:hover:before {
   left: 80%;
 }
+body main #contact .contact-title {
+  margin-top: 1em;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'easycore', Georgia, Serif;
+  background: url("../img/brush-stroke-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding-left: 5px;
+  font-size: 3.5em !important;
+  letter-spacing: 5px;
+  width: 40%;
+}
+body main #contact p {
+  margin-top: -3em;
+}
+body main #contact form {
+  font-family: 'Roboto';
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto;
+}
+body main #contact form .col-25,
+body main #contact form .col-75 {
+  width: 100%;
+  margin-top: 0;
+}
+body main #contact form input[type=text],
+body main #contact form input[type=email],
+body main #contact form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #000000;
+  border-radius: 4px;
+  resize: vertical;
+}
+body main #contact form label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+body main #contact form .field {
+  width: 100%;
+}
+body main #contact form .field:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body main #contact form .field button[type=submit] {
+  width: 200px;
+  height: 45px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 20px;
+}
+body main #contact form .field button[type=submit]:hover {
+  background-color: #8bb6c3;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  transform: translateY(-7px);
+}
 @media (min-width: 48em) {
   body .header li {
     float: left;
@@ -427,7 +499,8 @@ body main #portfolio .single-project .button-wrapper .btn-4a:hover:before {
     column-gap: 20px;
   }
   body #contact form .field:last-child {
-    grid-row-end: span 2;
+    grid-column-end: span 2;
+    text-align: center;
   }
   body #contact form .field:nth-child(3) {
     grid-column-end: span 2;

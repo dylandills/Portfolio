@@ -136,7 +136,7 @@
         <hr />
         </div>
       </section>
-      <!--- <section id="contact">
+      <section id="contact">
         <h1 class="contact-title">Contact</h1>
         <p>I'm baby austin flannel sriracha wayfarers four dollar toast yr. Meh tofu chambray truffaut art party cold-pressed. Direct trade kinfolk health goth, ramps kitsch palo santo narwhal adaptogen thundercats bespoke.</p>
         <form id="ajax-contact" method="post" action="mailer.php">
@@ -173,7 +173,7 @@
             </div>
         </form>
         <div id="form-messages"></div>
-      </section> -->
+      </section>
     </main>
   </body>
 </html>
