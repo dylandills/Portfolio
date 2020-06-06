@@ -14,7 +14,7 @@
             exit;
         }
         // Set the recipient email address.
-        $recipient = "dylan.dills@pcc.edu";
+        $recipient = "dylan.dills@gmail.com";
         // Set the email subject.
         $subject = "New contact from $name";
         // Build the email content.

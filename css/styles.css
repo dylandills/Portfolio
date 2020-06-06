@@ -2,54 +2,54 @@
   font-family: 'easycore';
   src: url('easycore-webfont.woff') format('woff'), /* Modern Browsers */ url('easycore-webfont.woff2') format('woff2'), /* Modern Browsers */ url('fonts/Easycore.ttf') format('truetype');
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  /* height of sticky header */
+}
 body {
   color: #000000;
 }
 body h1 {
   color: #000000;
   font-size: 1.6em;
-  font-weight: bold;
   margin-bottom: 0.8em;
   text-align: center;
 }
 body h2 {
   color: #000000;
   font-size: 1.4em;
-  font-weight: bold;
   margin-bottom: 0.7em;
   text-align: center;
 }
 body h3 {
   color: #000000;
   font-size: 1.1em;
-  font-weight: bold;
   margin-bottom: 0.55em;
   text-align: center;
 }
 body h4 {
   color: #000000;
   font-size: 0.9em;
-  font-weight: bold;
   margin-bottom: 0.45em;
   text-align: center;
 }
 body h5 {
   color: #000000;
   font-size: 0.85em;
-  font-weight: bold;
   margin-bottom: 0.425em;
   text-align: center;
 }
 body h6 {
   color: #000000;
   font-size: 0.75em;
-  font-weight: bold;
   margin-bottom: 0.375em;
   text-align: center;
 }
 body p {
   font-family: 'Roboto';
   font-size: 22px;
+  line-height: 1.2;
 }
 body .header {
   background-color: #ffffff;
@@ -59,6 +59,9 @@ body .header {
   z-index: 3;
   font-family: 'easycore', Georgia, Serif;
   color: #000000;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 body .header ul {
   margin: 0;
@@ -145,42 +148,33 @@ body .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 body .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+body main {
+  margin-top: 80px !important;
+}
 body main section {
   padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 body main section p {
   padding: 10px;
 }
 body main #home {
   background-color: #8bb6c3;
-  padding: 50px;
+  width: 100%;
 }
 body main #home .home-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-row-gap: 30px;
-  column-gap: 30px;
-  padding: 50px;
+  grid-row-gap: 10px;
+  column-gap: 20px;
+  padding: 50px 0;
 }
 body main #home .home-container .icon {
   padding-top: 10px;
   text-align: center;
 }
 body main #home .name {
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'easycore', Georgia, Serif;
-  background: url("../img/brush-stroke-1.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  font-size: 3.5em !important;
-  letter-spacing: 5px;
-  width: 40%;
-  position: absolute;
-  text-align: center;
-}
-body main #home .job-title {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -190,15 +184,29 @@ body main #home .job-title {
   background-size: 100% 100%;
   font-size: 3.5em !important;
   letter-spacing: 5px;
-  width: 40%;
+  width: 60%;
+  position: absolute;
+  text-align: center;
+}
+body main #home .job-title {
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'easycore', Georgia, Serif;
+  background: url("../img/brush-stroke-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 3.5em !important;
+  letter-spacing: 5px;
+  width: 60%;
   position: absolute;
   text-align: center;
 }
 body main #home .arrow {
-  position: fixed;
+  position: absolute;
   text-decoration: none;
   bottom: 0;
-  top: 75%;
+  top: 95%;
   left: 50%;
   margin-left: -20px;
   width: 50px;
@@ -279,7 +287,7 @@ body main #about .about-title {
   padding-left: 5px;
   font-size: 3.5em !important;
   letter-spacing: 5px;
-  width: 40%;
+  width: 60%;
 }
 body main #about .container {
   display: grid;
@@ -287,6 +295,7 @@ body main #about .container {
 }
 body main #about .container img {
   margin-top: -3.125em;
+  max-width: 100%;
 }
 body main #portfolio {
   background-color: #8bb6c3;
@@ -300,7 +309,7 @@ body main #portfolio .project-title {
   background-size: 100% 100%;
   font-size: 3.5em !important;
   letter-spacing: 5px;
-  width: 40%;
+  width: 60%;
   position: relative;
   margin: 1em 0 0;
 }
@@ -316,13 +325,17 @@ body main #portfolio .single-project-title {
   background-size: 100% 100%;
   font-size: 3.5em !important;
   letter-spacing: 5px;
-  width: 40%;
+  width: 60%;
   position: relative;
   margin: 1em 0 0;
+  width: 100% !important;
 }
 body main #portfolio .single-project {
   display: grid;
   grid-template-columns: auto;
+}
+body main #portfolio .single-project img {
+  max-width: 100%;
 }
 body main #portfolio .single-project .button-wrapper {
   display: flex;
@@ -331,7 +344,7 @@ body main #portfolio .single-project .button-wrapper {
 body main #portfolio .single-project .button-wrapper .btn {
   border: none;
   font-family: 'easycore', Georgia, Serif;
-  font-size: 1.8em;
+  font-size: 1.5em;
   background: #000000;
   cursor: pointer;
   padding: 10px 50px;
@@ -353,10 +366,12 @@ body main #portfolio .single-project .button-wrapper .btn:after {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
-body main #portfolio .single-project .button-wrapper .icon-arrow-right:before {
-  font-family: 'FontAwesome';
-  content: "\f061";
-  font-size: .6em !important;
+body main #portfolio .single-project .button-wrapper .btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body main #portfolio .single-project .button-wrapper .btn a:hover {
+  color: #000000;
 }
 body main #portfolio .single-project .button-wrapper .btn-4 {
   border: 3px solid #ffffff;
@@ -366,14 +381,14 @@ body main #portfolio .single-project .button-wrapper .btn-4 {
 }
 body main #portfolio .single-project .button-wrapper .btn-4:active {
   border-color: #ffffff;
-  color: #ffffff;
+  color: #000000;
 }
 body main #portfolio .single-project .button-wrapper .btn-4:active:before {
   color: #ffffff;
 }
 body main #portfolio .single-project .button-wrapper .btn-4:hover {
   background: #ffffff;
-  color: #000000;
+  color: #000000 !important;
   border-color: #000000;
 }
 body main #portfolio .single-project .button-wrapper .btn-4:before {
@@ -393,6 +408,10 @@ body main #portfolio .single-project .button-wrapper .btn-4a:before {
 body main #portfolio .single-project .button-wrapper .btn-4a:hover:before {
   left: 80%;
 }
+body main #contact {
+  max-width: 800px;
+  margin: 0 auto;
+}
 body main #contact .contact-title {
   margin-top: 1em;
   position: relative;
@@ -405,14 +424,13 @@ body main #contact .contact-title {
   padding-left: 5px;
   font-size: 3.5em !important;
   letter-spacing: 5px;
-  width: 40%;
+  width: 60%;
 }
 body main #contact p {
   margin-top: -3em;
 }
 body main #contact form {
   font-family: 'Roboto';
-  padding: 20px;
   display: grid;
   grid-template-columns: auto;
 }
@@ -442,10 +460,13 @@ body main #contact form .field:after {
   display: table;
   clear: both;
 }
+body main #contact form .field:last-child {
+  text-align: center;
+}
 body main #contact form .field button[type=submit] {
   width: 200px;
   height: 45px;
-  font-size: 11px;
+  font-size: .9em;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 700;
@@ -465,6 +486,12 @@ body main #contact form .field button[type=submit]:hover {
   color: #ffffff;
   transform: translateY(-7px);
 }
+body main #contact #form-messages {
+  font-family: 'easycore', Georgia, Serif;
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 3px;
+}
 @media (min-width: 48em) {
   body .header li {
     float: left;
@@ -480,29 +507,39 @@ body main #contact form .field button[type=submit]:hover {
   body .header .menu-icon {
     display: none;
   }
-  body #home .container {
+  body main .name,
+  body main .job-title,
+  body main .about-title,
+  body main .project-title,
+  body main .contact-title {
+    width: 40% !important;
+  }
+  body main #home .home-container {
     grid-template-columns: auto auto auto auto !important;
   }
-  body #about .container {
+  body main #about .container {
     display: grid;
     grid-template-columns: auto auto !important;
-    column-gap: 20px;
+    column-gap: 15px;
   }
-  body #portfolio .single-project {
+  body main #portfolio .single-project {
     display: grid;
     grid-template-columns: auto auto !important;
-    column-gap: 20px;
+    column-gap: 15px;
   }
-  body #contact form {
+  body main #contact form {
     display: grid;
     grid-template-columns: auto auto !important;
-    column-gap: 20px;
+    column-gap: 15px;
   }
-  body #contact form .field:last-child {
+  body main #contact form .field:last-child {
     grid-column-end: span 2;
-    text-align: center;
   }
-  body #contact form .field:nth-child(3) {
+  body main #contact form .field:nth-child(3) {
     grid-column-end: span 2;
+  }
+  body main #contact form .field .col-75 input[type="email"] {
+    width: 95%;
+    margin-left: 1.5em;
   }
 }

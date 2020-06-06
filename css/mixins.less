@@ -7,10 +7,10 @@
 .headingStyle(@paramColor: #000; @paramSize: 2em) {
     color: @paramColor;
     font-size: @paramSize;
-    font-weight: bold;
     margin-bottom: @paramSize /2;
     text-align: center;
 }
+
 
 //End of Parametric Mixins
 
@@ -30,7 +30,7 @@
   background-size: 100% 100%;
   font-size: 3.5em !important;
   letter-spacing: 5px;
-  width: 40%;
+  width: 60%;
 }
 
 
@@ -47,7 +47,7 @@
   padding-left: 5px;
   font-size: 3.5em !important;
   letter-spacing: 5px;
-  width: 40%;
+  width: 60%;
 }
 
 //Job / Name Title Specific Styles
@@ -68,7 +68,7 @@
 .large-grid() {
   display: grid;
   grid-template-columns: auto auto !important;
-  column-gap: 20px;
+  column-gap: 15px;
 }
 
 //Button Styles
@@ -76,7 +76,7 @@
   .btn {
     border: none;
     .easycore;
-    font-size: 1.8em;
+    font-size: 1.5em;
     background: @color2;
     cursor: pointer;
     padding: 10px 50px;
@@ -97,11 +97,13 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s;
     }
-  }
-  .icon-arrow-right:before {
-    font-family: 'FontAwesome';
-    content: "\f061";
-    font-size: .6em !important;
+    a {
+      text-decoration: none;
+      color: @color1;
+      &:hover {
+        color: @color2;
+      }
+    }
   }
   .btn-4 {
     border: 3px solid @color1;
@@ -110,14 +112,14 @@
     overflow: hidden;
     &:active {
       border-color: @color1;
-      color: @color1;
+      color: @color2;
       &:before {
         color: @color1;
       }
     }
     &:hover {
       background: @color1;
-      color: @color2;
+      color: @color2 !important;
       border-color: @color2;
     }
     &:before {
@@ -142,4 +144,9 @@
       }
     }
   }
+}
+
+//Title Styles
+.width() {
+  width: 40% !important;
 }

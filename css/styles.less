@@ -9,7 +9,10 @@
           url('fonts/Easycore.ttf') format('truetype');
 }
 
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* height of sticky header */
+}
 body {
   color: @color2;
   // Headings
@@ -40,6 +43,7 @@ body {
   p {
     font-family: 'Roboto';
     font-size: 22px;
+    line-height: 1.2;
   }
   //Header
   .header {
@@ -50,6 +54,9 @@ body {
    z-index: 3;
    .easycore;
    color: @color2;
+   top: 0;
+   right: 0;
+   left: 0;
    ul {
      margin: 0;
      padding: 0;
@@ -143,9 +150,12 @@ body {
   }
   //Main
   main {
+    margin-top: 80px !important;
     // General Section Styles
     section {
       padding: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
       p {
         padding: 10px;
       }
@@ -153,33 +163,33 @@ body {
     //Home Section
     #home {
       background-color: @main-color;
-      padding: 50px;
+      width: 100%;
       .home-container {
         display: grid;
         grid-template-columns: auto auto auto;
-        grid-row-gap: 30px;
-        column-gap: 30px;
-        padding: 50px;
+        grid-row-gap: 10px;
+        column-gap: 20px;
+        padding: 50px 0;
         .icon {
           padding-top: 10px;
           text-align: center;
         }
       }
       .name {
-        top: 30%;
-        .titleStyle;
-        .jobName-Title;
-      }
-      .job-title {
         top: 50%;
         .titleStyle;
         .jobName-Title;
       }
+      .job-title {
+        top: 70%;
+        .titleStyle;
+        .jobName-Title;
+      }
       .arrow {
-        position: fixed;
+        position: absolute;
         text-decoration: none;
         bottom: 0;
-        top: 75%;
+        top: 95%;
         left: 50%;
         margin-left:-20px;
         width: 50px;
@@ -238,6 +248,7 @@ body {
         .grid;
         img {
           margin-top: -3.125em;
+          max-width: 100%;
         }
       }
     }
@@ -255,9 +266,14 @@ body {
         .titleStyle;
         position: relative;
         margin: 1em 0 0;
+        width: 100% !important;
       }
       .single-project {
         .grid;
+        //Image Styling
+        img {
+          max-width: 100%;
+        }
         // Button Styling
         .button-wrapper {
           display: flex;
@@ -268,6 +284,8 @@ body {
     }
     //Contact Section
     #contact {
+      max-width: 800px;
+      margin: 0 auto;
       .contact-title {
         .titleStyle-2;
       }
@@ -276,7 +294,6 @@ body {
       }
       form {
         font-family: 'Roboto';
-        padding: 20px;
         .grid;
         .col-25, .col-75 {
           width: 100%;
@@ -290,20 +307,23 @@ body {
           resize: vertical;
         }
         label {
-        padding: 12px 12px 12px 0;
-        display: inline-block;
+          padding: 12px 12px 12px 0;
+          display: inline-block;
         }
         .field {
           width: 100%;
           &:after {
-          content: "";
-          display: table;
-          clear: both;
+            content: "";
+            display: table;
+            clear: both;
+          }
+          &:last-child {
+            text-align: center;
           }
           button[type=submit] {
             width: 200px;
             height: 45px;
-            font-size: 11px;
+            font-size: .9em;
             text-transform: uppercase;
             letter-spacing: 2.5px;
             font-weight: 700;
@@ -324,6 +344,12 @@ body {
             }
           }
         }
+      }
+      #form-messages {
+        .easycore;
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: 3px;
       }
     }
   }
@@ -348,34 +374,46 @@ body {
         display: none;
       }
     }
-    //Home Section
-    #home {
-      .container {
-        grid-template-columns: auto auto auto auto !important;
+    //General Desktop Styles
+    main {
+      //Title Styles
+      .name, .job-title, .about-title, .project-title, .contact-title {
+        .width;
       }
-    }
-    //About Section
-    #about {
-      .container {
-        .large-grid;
+      //Home Section
+      #home {
+        .home-container {
+          grid-template-columns: auto auto auto auto !important;
+        }
       }
-    }
-    #portfolio {
-      .single-project {
-        .large-grid;
+      //About Section
+      #about {
+        .container {
+          .large-grid;
+        }
       }
-    }
-    //Contact section
-    #contact {
-      form {
-        .large-grid;
-        .field {
-          &:last-child {
-            grid-column-end: span 2;
-            text-align: center;
-          }
-          &:nth-child(3) {
-            grid-column-end: span 2;
+      #portfolio {
+        .single-project {
+          .large-grid;
+        }
+      }
+      //Contact section
+      #contact {
+        form {
+          .large-grid;
+          .field {
+            &:last-child {
+              grid-column-end: span 2;
+            }
+            &:nth-child(3) {
+              grid-column-end: span 2;
+            }
+            .col-75 {
+              input[type="email"] {
+                width: 95%;
+                margin-left: 1.5em;
+              }
+            }
           }
         }
       }

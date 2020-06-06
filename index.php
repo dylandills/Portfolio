@@ -77,7 +77,7 @@
            <i class="fal fa-usb-drive fa-4x"></i>
          </div>
          <div class="icon animate__animated animate__bounceInLeft">
-          <i class="fal fa-coffee fa-4x"></i>
+          <i class="fal fa-comet fa-4x"></i>
          </div>
         </div>
         <span class="name">Dylan Dills</span>
@@ -88,12 +88,12 @@
         <h1 class="about-title">About</h1>
         <div class="container">
           <img src="img/profile-photo.jpg" alt="Image of Dylan Dills standing" />
-          <p>Keytar +1 man braid, raclette before they sold out lumbersexual fixie jianbing health goth sustainable kale chips bushwick humblebrag cliche. PBR&B waistcoat twee YOLO lyft franzen. Selfies bespoke salvia deep v vice, organic taiyaki shabby chic letterpress crucifix pinterest blue bottle artisan. Viral YOLO vexillologist thundercats craft beer vinyl plaid palo santo messenger bag ugh gentrify deep v lomo succulents. Synth copper mug helvetica pitchfork gentrify roof party chartreuse fanny pack. Sustainable fingerstache la croix pabst ennui.</p>
+          <p>Hi! My name is Dylan Dills (they/them pronouns). I am a aspiring creative web developer born and raised in Portland, OR. My background includes technical support and office administration, with some previous work in social services. Currently, I am finishing up my Associates of Applied Science degree at Portland Community College, in Website Development and Design. I am currently seeking a role with a company or projects that work with my various programming and content management skills, which include JavaScript, PHP, CSS3, CSS preprocessors LESS and Sass, Wordpress, and MySQL. When I'm not programming or hacking away at a problem, I can be found digging into archives of my record collection, binge watching documentaries, or when we are able to social gather again, at a show.</p>
         </div>
       </section>
       <section id="portfolio">
         <h1 class="project-title">Projects</h1>
-        <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+        <p>The following are a collection of web experiences I have had the pleasure of collecting and creating over the past couple years.</p>
         <hr />
         <h2 class="single-project-title">Alien Boy</h2>
         <div class="single-project">
@@ -101,9 +101,9 @@
             <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
           </div>
           <div class="paragraph-button">
-            <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+            <p>Alien Boy describes themselves as a "loud gay band from Portland, OR". As personal friends of mine, I found it apt to create a website that not only shows the real emotion in their lyrics, but their playful side as well. While this is no means the offical site for Alien Boy, I wanted to pay omage to a band who has become a pillar in the Portland music community.</p>
             <div class="button-wrapper">
-              <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+              <button class="btn btn-4 btn-4a"><a href="">Check It Out</a></button>
             </div>
           </div>
         </div>
@@ -111,12 +111,12 @@
         <h2 class="single-project-title">Ace In The Hole</h2>
         <div class="single-project">
           <div class="image">
-            <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
+            <img src="img/ace-in-the-hole.png" alt="Image of Ace In the Hole Project" />
           </div>
           <div class="paragraph-button">
-            <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+            <p>Ace In The Hole is an event company that hosts multisport athletic events, with an emphasis on accepting athletes of all different backgrounds, shapes, and sizes. This was a school project that helped challenged my ability to manage time, project plan, and utilize my skills within PHP.</p>
             <div class="button-wrapper">
-              <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+              <button class="btn btn-4 btn-4a"><a href="">Check It Out</a></button>
             </div>
           </div>
         </div>
@@ -124,12 +124,12 @@
         <h2 class="single-project-title">Burrito Masala</h2>
         <div class="single-project">
           <div class="image">
-            <img src="img/alien-boy.png" alt="Image of Alien Boy Project" />
+            <img src="img/burrito-masala.png" alt="Image of Burrito Masala Project" />
           </div>
           <div class="paragraph-button">
-            <p>I'm baby salvia scenester sartorial brunch, gluten-free helvetica kogi austin selvage whatever authentic. Small batch vape stumptown godard plaid +1 brunch. Brunch locavore wayfarers, squid ugh venmo meditation prism keffiyeh fixie. Lyft truffaut cray, schlitz poutine banh mi seitan organic lumbersexual raw denim street art meh tacos distillery flannel.</p>
+            <p>Burrito Masala is a mock project created for my CAS242 UX/UI Design for the Web class, taught by Juan Maldonado. The premise was around a food cart that combined southern Indian food and Mexican cuisine. The class introduced user experience (UX) and user interface (UI) design for the web, including gathering requirements, research, project management and user-centric design concepts to produce HTML and CSS web pages that display accurately on any web-supported device.</p>
             <div class="button-wrapper">
-              <button class="btn btn-4 btn-4a icon-arrow-right">Check It Out</button>
+              <button class="btn btn-4 btn-4a"><a href="">Check It Out</a></button>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
       </section>
       <section id="contact">
         <h1 class="contact-title">Contact</h1>
-        <p>I'm baby austin flannel sriracha wayfarers four dollar toast yr. Meh tofu chambray truffaut art party cold-pressed. Direct trade kinfolk health goth, ramps kitsch palo santo narwhal adaptogen thundercats bespoke.</p>
+        <p>Seeking new talent for your company? Have a project you need help with? Just want to chat? Drop me a line below!</p>
         <form id="ajax-contact" method="post" action="mailer.php">
 
             <div class="field">
