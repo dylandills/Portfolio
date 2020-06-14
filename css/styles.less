@@ -11,7 +11,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 70px; /* height of sticky header */
+  scroll-padding-top: 70px;
 }
 body {
   color: @color2;
@@ -71,9 +71,12 @@ body {
          font-size: 3em;
          color: @color2;
          text-align: center;
-         &:hover {
-           background-color: #f4f4f4;
-         }
+       }
+       .active {
+         background-color: #f4f4f4;
+       }
+       &:hover {
+         background-color: #f4f4f4;
        }
      }
    }
@@ -350,6 +353,24 @@ body {
         font-size: 3em;
         text-align: center;
         letter-spacing: 3px;
+      }
+    }
+  }
+  footer {
+    background: @color1;
+    width: 100%;
+    text-align: center;
+    ul {
+      margin-top: 4em;
+      li {
+        display: inline-block;
+        margin-right: 3em;
+        a>i {
+          color: @color2;
+          &:hover {
+            color: @main-color;
+          }
+        }
       }
     }
   }

@@ -88,7 +88,7 @@
         <h1 class="about-title">About</h1>
         <div class="container">
           <img src="img/profile-photo.jpg" alt="Image of Dylan Dills standing" />
-          <p>Hi! My name is Dylan Dills (they/them pronouns). I am a aspiring creative web developer born and raised in Portland, OR. My background includes technical support and office administration, with some previous work in social services. Currently, I am finishing up my Associates of Applied Science degree at Portland Community College, in Website Development and Design. I am currently seeking a role with a company or projects that work with my various programming and content management skills, which include JavaScript, PHP, CSS3, CSS preprocessors LESS and Sass, Wordpress, and MySQL. When I'm not programming or hacking away at a problem, I can be found digging into archives of my record collection, binge watching documentaries, or when we are able to social gather again, at a show.</p>
+          <p>Budding creative developer and techinical support specialist interested in making difficult problems simple works of art. Skilled in various technologies, along with excellent customer service skills. When I'm not programming or hacking away at a problem, I can be found digging into archives of my record collection, binge watching documentaries, or when we are able to social gather again, at a show.</p>
         </div>
       </section>
       <section id="portfolio">
@@ -103,7 +103,7 @@
           <div class="paragraph-button">
             <p>Alien Boy describes themselves as a "loud gay band from Portland, OR". As personal friends of mine, I found it apt to create a website that not only shows the real emotion in their lyrics, but their playful side as well. While this is no means the offical site for Alien Boy, I wanted to pay omage to a band who has become a pillar in the Portland music community.</p>
             <div class="button-wrapper">
-              <button class="btn btn-4 btn-4a"><a href="">Check It Out</a></button>
+              <button class="btn btn-4 btn-4a"><a href="http://dylandills.webhostingforstudents.com/cas242/week10/" target="_blank">Check It Out</a></button>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@
           <div class="paragraph-button">
             <p>Ace In The Hole is an event company that hosts multisport athletic events, with an emphasis on accepting athletes of all different backgrounds, shapes, and sizes. This was a school project that helped challenged my ability to manage time, project plan, and utilize my skills within PHP.</p>
             <div class="button-wrapper">
-              <button class="btn btn-4 btn-4a"><a href="">Check It Out</a></button>
+              <button class="btn btn-4 btn-4a"><a href="http://dylandills.webhostingforstudents.com/cas222/ace-in-the-hole/" target="_blank">Check It Out</a></button>
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
           <div class="paragraph-button">
             <p>Burrito Masala is a mock project created for my CAS242 UX/UI Design for the Web class, taught by Juan Maldonado. The premise was around a food cart that combined southern Indian food and Mexican cuisine. The class introduced user experience (UX) and user interface (UI) design for the web, including gathering requirements, research, project management and user-centric design concepts to produce HTML and CSS web pages that display accurately on any web-supported device.</p>
             <div class="button-wrapper">
-              <button class="btn btn-4 btn-4a"><a href="">Check It Out</a></button>
+              <button class="btn btn-4 btn-4a"><a href="http://dylandills.webhostingforstudents.com/cas242/week07/" target="_blank">Check It Out</a></button>
             </div>
           </div>
         </div>
@@ -175,5 +175,6 @@
         <div id="form-messages"></div>
       </section>
     </main>
+    <?php include 'includes/footer.inc.html.php';?>
   </body>
 </html>

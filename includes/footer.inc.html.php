@@ -1,13 +1,13 @@
 <footer>
   <ul>
     <li>
-      <a href="https://github.com/dylandills">
-        <i class="fa fa-github" style="font-size:36px"></i>
+      <a href="https://github.com/dylandills" target="_blank">
+        <i class="fa fa-github" style="font-size:3.2em"></i>
       </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/dylanedills/">
-        <i class="fa fa-linkedin" style="font-size:36px"></i>
+      <a href="https://www.linkedin.com/in/dylanedills/" target="_blank">
+        <i class="fa fa-linkedin" style="font-size:3.2em"></i>
       </a>
     </li>
   </ul>
